@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello instant noodles fans!</string>
     <string name="app_name">iNoodles</string>
+    <string name="review">Review</string>
 </resources>
