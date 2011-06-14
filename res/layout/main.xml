@@ -9,4 +9,5 @@
     android:layout_height="wrap_content" 
     android:text="@string/hello"
     />
+<Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Review" android:textColor="#FFFFFF" android:textSize="60sp"></Button>
 </LinearLayout>
