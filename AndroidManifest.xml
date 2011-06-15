@@ -7,14 +7,26 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".main"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <!-- action determina que intents pueden pasar por el filtro mínimo 1 -->
                 <category android:name="android.intent.category.LAUNCHER" />
+                <!-- category: Esto no lo entiendo -->
             </intent-filter>
+            <!--intent-filter: Specifies the types of intents that an activity, 
+            	service, or broadcast receiver can respond to.
+            	 -->
         </activity>
         <activity android:name="review"
-                  android:label="@string/review">
+                  android:label="@string/review"	
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <!-- 
+                  :name  Name of the class that implements the activity
+                  :label A user-readable label for the activity
+                  :theme Define an overall theme for the activity
+                  -->
         </activity>
 
     </application>
