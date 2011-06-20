@@ -7,6 +7,21 @@
   android:background="#FFFFFF" 
   android:clipChildren="false" 
   android:orientation="vertical">
+    <TextView	android:id="@+id/textView2" 
+    			android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content" 
+    			android:text="Código de Barras:" 
+    			android:textColor="#551111" 
+    			android:textSize="35sp">
+    </TextView>
+    <TextView 	android:text="TextView" 
+    			android:id="@+id/textView1" 
+    			android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content" 
+    			android:textSize="30sp" 
+    			android:textColor="#111122" 
+    			android:gravity="center">
+    </TextView>
     <Button android:id="@+id/button1" 
        		android:layout_height="wrap_content" 
        		android:layout_width="fill_parent" 
@@ -16,4 +31,4 @@
        		android:textColorHint="#FF0000" 
        		android:textSize="60sp">
        		</Button>
-</LinearLayout>
+   </LinearLayout>

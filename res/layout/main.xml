@@ -3,9 +3,43 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#000FFF"
+    android:background="#FFFFFF"
     >
-<Button android:id="@+id/button1" 
+    <TextView 	android:text="@string/introduceCB" 
+    			android:id="@+id/textView1" 
+    			android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content" 
+    			android:textSize="30sp" 
+    			android:textColor="#111111">
+    </TextView>
+ 
+    <LinearLayout android:layout_width="match_parent" 
+    			  android:layout_height="wrap_content" 
+    			  android:id="@+id/linearLayout1">
+        <EditText	android:id="@+id/codigoPais" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:inputType="number" 
+        			android:digits="1234567890"
+        			android:maxLength="1" android:text="0">
+        </EditText>
+        <!-- digits no permite escribir anda que no este ahí especificado -->
+        <EditText	android:id="@+id/codigoEmpresa" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:inputType="number" 
+        			android:digits="1234567890"
+        			android:maxLength="6" android:text="000000">
+        </EditText>
+        <EditText	android:id="@+id/codigoArticulo" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:inputType="number" 
+        			android:digits="1234567890"
+        			android:maxLength="6" android:text="000000">
+        </EditText>
+    </LinearLayout>
+<Button android:id="@+id/botonReview" 
 		android:layout_height="wrap_content" 
 		android:layout_width="match_parent" 
 		android:text="@string/review" 

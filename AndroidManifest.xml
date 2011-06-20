@@ -28,6 +28,6 @@
                   :theme Define an overall theme for the activity
                   -->
         </activity>
-
+	<uses-sdk android:minSdkVersion="8" />
     </application>
 </manifest>

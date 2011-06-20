@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class review extends Activity {
     /** Called when the activity is first created. */
@@ -11,6 +12,9 @@ public class review extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.review);
+        TextView codigoPais = (TextView) findViewById(R.id.textView1);
+        String codigoBarras = getIntent().getStringExtra("codigoPais") + "-" + getIntent().getStringExtra("codigoEmpresa") + "-" + getIntent().getStringExtra("codigoArticulo");
+        codigoPais.setText(codigoBarras);
     }
     
 	public void onMainClick(View button){
