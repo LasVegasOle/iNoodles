@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 
 public class iNoodlesOpenHelper extends SQLiteOpenHelper {
     //Sentencia SQL para crear la tabla de Usuarios
-    String sqlCreate = "CREATE TABLE iNoodles (nombreNoodles TEXT, puntacionTotal INTEGER)";
+    String sqlCreate = "CREATE TABLE iNoodles (nombreNoodles TEXT, codigoDeBarras TEXT, puntacionTotal INTEGER)";
  
     public iNoodlesOpenHelper(Context contexto, String nombre,
                                CursorFactory factory, int version) {
@@ -28,7 +28,7 @@ public class iNoodlesOpenHelper extends SQLiteOpenHelper {
         //      a la nueva, por lo que este método debería ser más elaborado.
  
         //Se elimina la versión anterior de la tabla
-        db.execSQL("DROP TABLE IF EXISTS Usuarios");
+        db.execSQL("DROP TABLE IF EXISTS iNoodles");
  
         //Se crea la nueva versión de la tabla
         db.execSQL(sqlCreate);

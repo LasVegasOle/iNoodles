@@ -28,6 +28,15 @@
                   :theme Define an overall theme for the activity
                   -->
         </activity>
+        <activity android:name="lista"
+                  android:label="@string/lista"	
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <!-- 
+                  :name  Name of the class that implements the activity
+                  :label A user-readable label for the activity
+                  :theme Define an overall theme for the activity
+                  -->
+        </activity>
 	<uses-sdk android:minSdkVersion="8" />
     </application>
 </manifest>

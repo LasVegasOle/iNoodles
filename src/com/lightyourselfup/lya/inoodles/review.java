@@ -2,6 +2,7 @@ package com.lightyourselfup.lya.inoodles;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -15,6 +16,21 @@ public class review extends Activity {
         TextView codigoPais = (TextView) findViewById(R.id.textView1);
         String codigoBarras = getIntent().getStringExtra("codigoPais") + "-" + getIntent().getStringExtra("codigoEmpresa") + "-" + getIntent().getStringExtra("codigoArticulo");
         codigoPais.setText(codigoBarras);
+        
+        //Abrimos la base de datos 'iNoodles' en modo escritura
+        iNoodlesOpenHelper noodlesdbh = new iNoodlesOpenHelper(this, "iNoodles", null, 1);
+        SQLiteDatabase db = noodlesdbh.getWritableDatabase();
+      //Si hemos abierto correctamente la base de datos
+        if(db != null)
+        {
+                //Insertamos los datos en la tabla Usuarios
+                db.execSQL("INSERT INTO iNoodles (nombreNoodles,codigoDeBarras,puntacionTotal) " 
+                		+ "VALUES ('Nissin calipo','"+codigoBarras+"', 3);");
+                
+            //Cerramos la base de datos
+            db.close();
+        }
+       
     }
     
 	public void onMainClick(View button){

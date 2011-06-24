@@ -4,5 +4,6 @@
     <string name="app_name">iNoodles</string>
     <string name="main">Main</string>
     <string name="review">Review</string>
-    <string name="introduceCB">Introduce el código de barras y pulsa el botón!</string>
+    <string name="lista">List</string>
+    <string name="introduceCB">Introduce el código de barras y pulsa el botón!NEGRO!!</string>
 </resources>

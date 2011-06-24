@@ -22,6 +22,10 @@
     			android:textColor="#111122" 
     			android:gravity="center">
     </TextView>
+    <LinearLayout   android:layout_width="match_parent" 
+    				android:layout_height="wrap_content" 
+    				android:id="@+id/linearLayout1">
+    </LinearLayout>
     <Button android:id="@+id/button1" 
        		android:layout_height="wrap_content" 
        		android:layout_width="fill_parent" 

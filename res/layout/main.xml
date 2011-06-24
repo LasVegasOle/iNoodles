@@ -47,4 +47,12 @@
 		android:textSize="60sp" 
 		android:onClick="onReviewClick">
 		</Button>
+<Button android:id="@+id/botonLista" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" 
+		android:text="@string/lista" 
+		android:textColor="#FFFFFF" 
+		android:textSize="60sp" 
+		android:onClick="onListaClick">
+		</Button>
 </LinearLayout>

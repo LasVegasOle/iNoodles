@@ -30,4 +30,20 @@ public class main extends Activity {
 		intent.putExtra("codigoArticulo", codigoArticulo.getText().toString());
 		startActivity(intent);
 	}
+
+	public void onListaClick(View button){
+		
+		EditText codigoPais = (EditText) findViewById(R.id.codigoPais);
+		EditText codigoEmpresa = (EditText) findViewById(R.id.codigoEmpresa);
+		EditText codigoArticulo = (EditText) findViewById(R.id.codigoArticulo);
+		
+		Toast.makeText(this,"Listo!", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(); // creas un Intent vacio(new)
+		intent.setClass(this, lista.class);
+		intent.putExtra("codigoPais", codigoPais.getText().toString());
+		intent.putExtra("codigoEmpresa", codigoEmpresa.getText().toString());
+		intent.putExtra("codigoArticulo", codigoArticulo.getText().toString());
+		startActivity(intent);
+	}
+
 }
