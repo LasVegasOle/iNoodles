@@ -37,6 +37,13 @@
                   :theme Define an overall theme for the activity
                   -->
         </activity>
+	<activity android:name=".listas.aroma">
+	</activity>
+	<activity android:name=".listas.nota">
+	</activity>
+	<activity android:name=".listas.picante">
+	</activity>
+
 	<uses-sdk android:minSdkVersion="8" />
     </application>
 </manifest>
