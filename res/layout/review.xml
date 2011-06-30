@@ -22,9 +22,61 @@
     			android:textColor="#111122" 
     			android:gravity="center">
     </TextView>
+    
     <LinearLayout   android:layout_width="match_parent" 
     				android:layout_height="wrap_content" 
     				android:id="@+id/linearLayout1">
+        <LinearLayout	android:layout_width="wrap_content" 
+        				android:layout_height="match_parent" 
+        				android:id="@+id/linearLayout2">
+            <TextView	android:text="@string/aroma" 
+            			android:id="@+id/textView3" 
+            			android:layout_width="wrap_content" 
+            			android:layout_height="wrap_content"
+            			android:textColor="#000000" >
+            </TextView>
+            <RatingBar	android:id="@+id/ratingAroma" 
+            			android:layout_width="wrap_content" 
+            			android:layout_height="wrap_content"
+            			android:numStars="5"
+            			android:stepSize="0.5"
+            			android:isIndicator="true">
+            </RatingBar>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout	android:layout_width="match_parent" 
+    				android:layout_height="wrap_content" 
+    				android:id="@+id/linearLayout3">
+        <TextView	android:text="@string/picante" 
+        			android:id="@+id/textView4" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:textColor="#000000">
+        </TextView>
+        <RatingBar	android:id="@+id/ratingPicante"
+					android:stepSize="0.5"
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:isIndicator="true">
+        </RatingBar>
+    </LinearLayout>
+    
+    <LinearLayout	android:layout_width="match_parent" 
+    				android:layout_height="wrap_content" 
+    				android:id="@+id/linearLayout4">
+        <TextView	android:text="@string/total" 
+        			android:id="@+id/textView5" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:textColor="#000000">
+        </TextView>
+        <RatingBar	android:id="@+id/ratingTotal"
+					android:stepSize="0.5"
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content"
+        			android:isIndicator="true">
+        </RatingBar>
     </LinearLayout>
     <Button android:id="@+id/button1" 
        		android:layout_height="wrap_content" 
