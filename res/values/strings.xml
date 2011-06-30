@@ -5,5 +5,8 @@
     <string name="main">Main</string>
     <string name="review">Review</string>
     <string name="lista">List</string>
+    <string name="aroma">Aroma</string>
+    <string name="picante">Picante</string>
+    <string name="total">Total</string>
     <string name="introduceCB">Introduce el código de barras y pulsa el botón!NEGRO!!</string>
 </resources>
