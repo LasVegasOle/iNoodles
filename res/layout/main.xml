@@ -9,7 +9,7 @@
     			android:id="@+id/textView1" 
     			android:layout_width="wrap_content" 
     			android:layout_height="wrap_content" 
-    			android:textSize="30sp" 
+    			android:textSize="21sp" 
     			android:textColor="#111111">
     </TextView>
  
@@ -44,7 +44,7 @@
 		android:layout_width="match_parent" 
 		android:text="@string/review" 
 		android:textColor="#FFFFFF" 
-		android:textSize="60sp" 
+		android:textSize="20sp" 
 		android:onClick="onReviewClick">
 		</Button>
 <Button android:id="@+id/botonLista" 
@@ -52,7 +52,16 @@
 		android:layout_width="match_parent" 
 		android:text="@string/lista" 
 		android:textColor="#FFFFFF" 
-		android:textSize="60sp" 
+		android:textSize="20sp" 
 		android:onClick="onListaClick">
 		</Button>
+<TextView	android:text="TextView" 
+			android:id="@+id/chronos" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#000008" 
+			android:textSize="25sp"> 
+</TextView>
+
+
 </LinearLayout>

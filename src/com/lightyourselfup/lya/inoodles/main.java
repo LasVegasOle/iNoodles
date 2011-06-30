@@ -3,9 +3,12 @@ package com.lightyourselfup.lya.inoodles;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
 
 public class main extends Activity {
     /** Called when the activity is first created. */
@@ -13,6 +16,18 @@ public class main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        new CountDownTimer(30000, 1000){
+        	
+        	TextView chronos = (TextView) findViewById(R.id.chronos);
+            public void onTick(long millisUntilFinished) {
+                chronos.setText("seconds remaining: " + millisUntilFinished / 1000);
+            }
+
+            public void onFinish() {
+                chronos.setText("done!");
+            }
+         }.start();
     }
 
 	

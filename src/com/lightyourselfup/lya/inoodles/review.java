@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class review extends Activity {
@@ -45,17 +45,20 @@ public class review extends Activity {
         
         //Meter TextView Generado en Java dentro de layout determinado
         TextView pruebaText = new TextView(this);
-        //pruebaText.setTextColor(0);
-        pruebaText.setText("InstertandoTextoProCódigoaisdhfaisdhfaldskjhfalksjdhfalkjsdhflaksdhfalksdjhflaksdjhfalkdsjhfaishf ierhfaise hfaishf laiwhrfoqiwuehfoqiwuhfoqwiufowiufowfuhoaiui aoer ");
-        pruebaText.setTextColor(0);
-        pruebaText.setTextScaleX(5);
-        ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView);
-        scrollView.addView(pruebaText);
+        pruebaText.setText("Bueniiiisimo!");
+        pruebaText.setTextColor(android.graphics.Color.BLACK);
         
-        
-        //setContentView(scrollView);
+        TextView prueba2Text = new TextView(this);
+        prueba2Text.setText("Mamahuhu");
+        prueba2Text.setTextColor(android.graphics.Color.MAGENTA);
 
+        LinearLayout linearComments = (LinearLayout) findViewById(R.id.linearComments);
         
+        
+        linearComments.addView(pruebaText);
+        linearComments.addView(prueba2Text);
+        
+
        
     }
     
