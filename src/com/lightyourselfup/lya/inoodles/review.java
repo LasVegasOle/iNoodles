@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RatingBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class review extends Activity {
@@ -31,7 +32,7 @@ public class review extends Activity {
         //Abrimos la base de datos 'iNoodles' en modo escritura
         iNoodlesOpenHelper noodlesdbh = new iNoodlesOpenHelper(this, "iNoodles", null, 1);
         SQLiteDatabase db = noodlesdbh.getWritableDatabase();
-      //Si hemos abierto correctamente la base de datos
+        //Si hemos abierto correctamente la base de datos
         if(db != null)
         {
                 //Insertamos los datos en la tabla Usuarios
@@ -41,6 +42,20 @@ public class review extends Activity {
             //Cerramos la base de datos
             db.close();
         }
+        
+        //Meter TextView Generado en Java dentro de layout determinado
+        TextView pruebaText = new TextView(this);
+        //pruebaText.setTextColor(0);
+        pruebaText.setText("InstertandoTextoProCódigoaisdhfaisdhfaldskjhfalksjdhfalkjsdhflaksdhfalksdjhflaksdjhfalkdsjhfaishf ierhfaise hfaishf laiwhrfoqiwuehfoqiwuhfoqwiufowiufowfuhoaiui aoer ");
+        pruebaText.setTextColor(0);
+        pruebaText.setTextScaleX(5);
+        ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView);
+        scrollView.addView(pruebaText);
+        
+        
+        //setContentView(scrollView);
+
+        
        
     }
     
